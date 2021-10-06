@@ -68,7 +68,7 @@
   align-items: center;
 }
 .btn-startGame {
-  height: 30px;
+  height: 40px;
   width: 100px;
 
   cursor: pointer;
@@ -108,7 +108,7 @@
 .surrender {
 }
 .btn-surrender {
-  height: 30px;
+  height: 40px;
   width: 100px;
 
   cursor: pointer;
