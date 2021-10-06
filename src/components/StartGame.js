@@ -7,16 +7,15 @@ function StartGame(props) {
         props.setCurrentNum(Math.floor(Math.random() * 100))
         props.setGameStatus(true);
         props.setUserLimit(5)
-        
+        props.setNumberOfRounds(props.numberOfRounds + 1)
+        props.setHint('')
+        props.setVictory('')
     }
 
-    // userLimit, setUserLimit
-    // currentNum, setCurrentNum
-    // numberOfTries, setNumberOfTries
 
 //Need to add an if statement in the div the change text after first round of game
     return (
-        <div>
+        <div className="user-interface-start-game">
             <button className="btn-startGame" onClick={() => eventHandler()}>Start Game</button>
         </div>
     )
