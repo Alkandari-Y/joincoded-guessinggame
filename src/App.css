@@ -1,8 +1,133 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.main-title {
+  font-family: "Shojumaru", cursive;
+  font-size: 40px;
+  color: rgb(5, 251, 5);
+  line-height: 2rem;
 }
 
 .home {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  width: 80%;
 }
 
+.home-title {
+  font-family: "Shojumaru", cursive;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-subtitle {
+  text-align: center;
+}
+
+.home-goodluck header {
+}
+
+.home-goodluck-text {
+  color: white;
+}
+/*************************************              END OF HOME           ************************************************/
 .user-interface {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+}
+
+.user-interface-hint {
+  color: red;
+  text-align: center;
+}
+/*************************************              END OF InterFace           ************************************************/
+
+.statsBar {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  margin: 20px auto;
+}
+
+/*************************************              END OF StatsBar           ************************************************/
+.user-interface-start-game {
+  width: 100%;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.btn-startGame {
+  height: 30px;
+  width: 100px;
+
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.statsBar-round-number {
+}
+
+.stats-Bar-attempts {
+}
+/*************************************              END OF Start           ************************************************/
+.user-interface-inputs {
+  display: flex;
+  flex-direction: column;
+}
+.user-input-label {
+}
+
+.user-interface-inputs-btn-text {
+}
+
+.ufi-user-guess {
+  margin: 15px;
+  height: 35px;
+  width: 100px;
+  cursor: text;
+  border-radius: 15px;
+}
+.btn-submit-guess {
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+/*************************************              END OF UserAttempt           ************************************************/
+.surrender {
+}
+.btn-surrender {
+  height: 30px;
+  width: 100px;
+
+  cursor: pointer;
+  border-radius: 15px;
+}
+/*************************************              END OF Surrender           ************************************************/
+
+/*************************************              END OF StatsBar           ************************************************/
+
+/******************Buttons and inputs*******************/
+.btn-startGame:hover {
+}
+.ufi-user-guess:hover {
+}
+.ufi-user-guess:focus {
+}
+
+.btn-submit-guess:hover {
+}
+
+.btn-surrender:hover {
 }

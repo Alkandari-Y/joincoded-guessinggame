@@ -10,6 +10,7 @@ function StartGame(props) {
         props.setNumberOfRounds(props.numberOfRounds + 1)
         props.setHint('')
         props.setVictory('')
+        props.returnInitiate(true)
     }
 
 

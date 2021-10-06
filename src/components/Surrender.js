@@ -8,13 +8,14 @@ function Surrender(props) {
         props.setUserLimit(null)
         props.setNumberOfRounds(0)
         props.setHint('')
+        props.setWins(0)
     }
 
 
 
     return (
-        <div>
-            <button className="" onClick={()=> surrenderHandler()}>Surrender!</button>
+        <div className="surrender">
+            <button className="btn-surrender" onClick={()=> surrenderHandler()}>Surrender!</button>
         </div>
     )
 }

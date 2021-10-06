@@ -10,6 +10,7 @@ function UserAttempt(props) {
             alert("You win!")
             props.setHint('')
             props.setVictory('won')
+            props.setWins(props.currentWins+1)
             props.setGameStatus(false)
         } else if (difference >= 20) {
             props.setHint("You're too high bro!")
@@ -40,23 +41,13 @@ function UserAttempt(props) {
         }  
     }
 
-
-    
-// userLimit
-// setUserLimit
-    
-
-// currentNum
-
-// setGameStatus
-// numberOfRounds
-// setNumberOfRounds
-
     return (
         <div className="user-interface-inputs">
             <label className="user-input-label" for="user-input">Guess a number between 0 and 100</label>
-            <input min="0" max="100" type="number" placeholder="User Input" className="ufi-user-guess" name="user-input" id="user-input"></input>
-            <button className="btn-submit-guess" onClick={() => submitHandler()}>Commit</button>
+            <div className="user-interface-inputs-btn-text">
+             <input min="0" max="100" type="number" placeholder="User Input" className="ufi-user-guess" name="user-input" id="user-input"></input>
+             <button className="btn-submit-guess" name="user-input" onClick={() => submitHandler()}>Commit</button>
+            </div>
         </div>
     )
 }
