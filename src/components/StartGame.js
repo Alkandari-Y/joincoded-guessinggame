@@ -17,7 +17,7 @@ function StartGame(props) {
 //Need to add an if statement in the div the change text after first round of game
     return (
         <div className="user-interface-start-game">
-            <button className="btn-startGame" onClick={() => eventHandler()}>Start Game</button>
+            <button className="btn-startGame" onClick={() => eventHandler()}>{props.numberOfRounds === 0 ? 'Start Game' : 'Play Again!'}</button>
         </div>
     )
 }

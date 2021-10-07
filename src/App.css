@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  align-content: center;
   width: 100%;
 }
 
@@ -19,7 +19,7 @@
   align-items: center;
   justify-items: center;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 }
 
 .home-title {
@@ -32,15 +32,13 @@
   text-align: center;
 }
 
-.home-goodluck header {
-}
-
 .home-goodluck-text {
   color: white;
 }
 /*************************************              END OF HOME           ************************************************/
 .user-interface {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-content: center;
@@ -62,39 +60,46 @@
 
 /*************************************              END OF StatsBar           ************************************************/
 .user-interface-start-game {
+  display: flex;
   width: 100%;
   margin: 30px;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 .btn-startGame {
   height: 40px;
   width: 100px;
-
+  size: 80px;
   cursor: pointer;
   border-radius: 15px;
 }
 
-.statsBar-round-number {
-}
-
-.stats-Bar-attempts {
-}
 /*************************************              END OF Start           ************************************************/
 .user-interface-inputs {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .user-input-label {
+  margin: 20px 40px;
+  padding-left: 0px 50px;
+  font-weight: bold;
 }
 
 .user-interface-inputs-btn-text {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .ufi-user-guess {
   margin: 15px;
   height: 35px;
-  width: 100px;
+  width: 150px;
   cursor: text;
   border-radius: 15px;
 }
@@ -106,28 +111,55 @@
 }
 /*************************************              END OF UserAttempt           ************************************************/
 .surrender {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 .btn-surrender {
   height: 40px;
-  width: 100px;
-
+  width: 270px;
+  margin: 0px 20;
   cursor: pointer;
   border-radius: 15px;
 }
 /*************************************              END OF Surrender           ************************************************/
+.prize {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
 
-/*************************************              END OF StatsBar           ************************************************/
+.prize-code {
+  width: 50%;
+  justify-content: center;
+  text-align: center;
+}
+
+/*************************************              END OF Prize           ************************************************/
 
 /******************Buttons and inputs*******************/
 .btn-startGame:hover {
+  border-style: solid;
+  background-color: rgb(5, 251, 5);
 }
+
 .ufi-user-guess:hover {
+  border-style: solid;
 }
 .ufi-user-guess:focus {
+  font-weight: bold;
 }
 
 .btn-submit-guess:hover {
+  border-style: solid;
+  background-color: rgb(5, 251, 5);
 }
 
 .btn-surrender:hover {
+  border-style: solid;
+  background-color: rgb(252, 104, 104);
 }
