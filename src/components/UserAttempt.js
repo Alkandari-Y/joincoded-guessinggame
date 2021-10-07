@@ -15,7 +15,7 @@ function UserAttempt(props) {
         } else if (difference >= 20) {
             props.setHint("You're too high bro!")
         } else if (difference <= 20 && difference > 0) {
-            props.setHint("You're warn but high!")
+            props.setHint("You're warm but high!")
         } else if (difference <= 0 && difference >= -20) {
             props.setHint("You're close but low!")
         } else if (difference <= -20) {
